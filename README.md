@@ -1,12 +1,12 @@
-# 🔔 Price Watcher
+#  Price Watcher
 
-> Bot de monitoramento de preços com alertas por **e-mail** e **Telegram**.
+ Bot de monitoramento de preços com alertas por **e-mail** e **Telegram**.
 
 Monitora produtos no **Mercado Livre** e te avisa automaticamente quando o preço atingir a sua meta — sem precisar ficar verificando manualmente.
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 - 🔍 Monitoramento automático de múltiplos produtos
 - 📧 Alertas por e-mail (Gmail / SMTP)
@@ -17,7 +17,7 @@ Monitora produtos no **Mercado Livre** e te avisa automaticamente quando o preç
 
 ---
 
-## 🚀 Como usar
+##  Como usar
 
 ### 1. Clone o repositório
 ```bash
@@ -73,7 +73,7 @@ python src/watcher.py \
 
 ---
 
-## 📁 Estrutura do projeto
+##  Estrutura do projeto
 
 ```
 price-watcher/
@@ -88,7 +88,7 @@ price-watcher/
 
 ---
 
-## ⚙️ Como configurar o Telegram
+##  Como configurar o Telegram
 
 1. Crie um bot conversando com [@BotFather](https://t.me/BotFather) no Telegram
 2. Copie o **token** gerado
@@ -98,7 +98,7 @@ price-watcher/
 
 ---
 
-## ⚙️ Como configurar o Gmail
+##  Como configurar o Gmail
 
 1. Acesse [myaccount.google.com](https://myaccount.google.com)
 2. Ative a **verificação em duas etapas**
@@ -107,7 +107,7 @@ price-watcher/
 
 ---
 
-## 🔧 Como adicionar suporte a outras lojas
+##  Como adicionar suporte a outras lojas
 
 Basta criar uma nova função `scrape_nomeloja(url)` em `watcher.py` e registrá-la na função `get_price()`:
 
@@ -121,22 +121,22 @@ def get_price(url: str) -> dict | None:
 
 ---
 
-## 📋 Exemplo de saída no terminal
+##  Exemplo de saída no terminal
 
 ```
-2025-01-15 10:30:00  INFO     🚀 Price Watcher iniciado — verificando a cada 30 min
-2025-01-15 10:30:01  INFO     🔍 Verificando: Teclado Mecânico Redragon
-2025-01-15 10:30:02  INFO       💲 Preço atual: R$ 279.90 | Meta: R$ 250.00
-2025-01-15 10:30:02  INFO       ⏳ Ainda R$ 29.90 acima da meta.
-2025-01-15 10:30:04  INFO     🔍 Verificando: Monitor LG 24' Full HD
-2025-01-15 10:30:05  INFO       💲 Preço atual: R$ 899.00 | Meta: R$ 900.00
-2025-01-15 10:30:05  INFO       ✅ Preço atingiu a meta! Enviando notificação...
-2025-01-15 10:30:05  INFO     📧  E-mail de alerta enviado!
+2025-01-15 10:30:00  INFO      Price Watcher iniciado — verificando a cada 30 min
+2025-01-15 10:30:01  INFO     Verificando: Teclado Mecânico Redragon
+2025-01-15 10:30:02  INFO        Preço atual: R$ 279.90 | Meta: R$ 250.00
+2025-01-15 10:30:02  INFO        Ainda R$ 29.90 acima da meta.
+2025-01-15 10:30:04  INFO      Verificando: Monitor LG 24' Full HD
+2025-01-15 10:30:05  INFO        Preço atual: R$ 899.00 | Meta: R$ 900.00
+2025-01-15 10:30:05  INFO        Preço atingiu a meta! Enviando notificação...
+2025-01-15 10:30:05  INFO       E-mail de alerta enviado!
 ```
 
 ---
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 - **Python 3.11+**
 - `requests` — requisições HTTP
@@ -145,6 +145,6 @@ def get_price(url: str) -> dict | None:
 
 ---
 
-## 📄 Licença
+##  Licença
 
 MIT — fique à vontade para usar, modificar e distribuir.
