@@ -1,0 +1,13 @@
+# Dados gerados em tempo de execução
+data/history.json
+data/alert_state.json
+data/*.tmp
+
+# Segredos
+.env
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
